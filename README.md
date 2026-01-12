@@ -68,15 +68,12 @@ I tested the problem against the Qwen-2.5-Coder-32B model (and variants) to veri
 
 Script: `python3 test_runner.py`
 
-```
-
 TEST CASE                 | SOLUTION   | RUN_01     | RUN_02     | RUN_03     
 -------------------------------------------------------------------------------------
 1. Classic Trap (aba)     | 388        | 390 * | 388        | 390 * 2. High Val Mid (aza)     | 388        | 438 * | 388        | 438 * 3. Descending (cba)       | -1         | -1         | -1         | -1         
 4. High Val Seq (zyx)     | -1         | -1         | -1         | -1         
 5. Even Mirror (abba)     | 388        | 390 * | 388        | 390 * 6. Long Mirror (abcba)    | 388        | 390 * | 388        | 390 * -------------------------------------------------------------------------------------
 * Denotes a failure (result differs from solution.py)
-```
 
 ### Failure Analysis:
 
